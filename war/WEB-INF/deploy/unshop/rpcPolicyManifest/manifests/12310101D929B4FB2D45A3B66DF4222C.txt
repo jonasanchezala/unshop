@@ -1,0 +1,2 @@
+serviceClass: co.edu.unal.unshop.client.service.ProductService
+path: E71175D344A75C50094231A9C2A096AA.gwt.rpc

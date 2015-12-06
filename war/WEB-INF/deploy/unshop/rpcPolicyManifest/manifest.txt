@@ -1,0 +1,4 @@
+# Module unshop
+# RPC service class, partial path of RPC policy file
+co.edu.unal.unshop.client.service.UserService, FF68652E8D2CC7F542218922068A5BDB.gwt.rpc
+co.edu.unal.unshop.client.service.ProductService, E71175D344A75C50094231A9C2A096AA.gwt.rpc

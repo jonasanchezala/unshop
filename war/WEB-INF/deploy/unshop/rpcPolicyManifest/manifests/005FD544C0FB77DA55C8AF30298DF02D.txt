@@ -1,0 +1,2 @@
+serviceClass: co.edu.unal.unshop.client.service.UserService
+path: FF68652E8D2CC7F542218922068A5BDB.gwt.rpc
