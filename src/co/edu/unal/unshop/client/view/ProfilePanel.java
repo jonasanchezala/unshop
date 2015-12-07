@@ -88,13 +88,7 @@ public class ProfilePanel extends Composite{
 		verticalPanel.add(flexTable);
 		verticalPanel2.add(flexTable2);
 		verticalPanel3.add(orLabel);
-		
-		verticalPanel.setVerticalAlignment(HasVerticalAlignment.ALIGN_MIDDLE);
-		verticalPanel.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
-		verticalPanel3.setVerticalAlignment(HasVerticalAlignment.ALIGN_MIDDLE);
-		verticalPanel3.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
-		verticalPanel2.setVerticalAlignment(HasVerticalAlignment.ALIGN_MIDDLE);
-		verticalPanel2.setHorizontalAlignment(HasHorizontalAlignment.ALIGN_CENTER);
+	
 		panel.add(verticalPanel);		
 		panel.add(verticalPanel3);
 		panel.add(verticalPanel2);

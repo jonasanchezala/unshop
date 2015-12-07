@@ -7,8 +7,11 @@ import co.edu.unal.unshop.client.service.UserServiceAsync;
 import co.edu.unal.unshop.shared.UserShop;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlexTable;
 import com.google.gwt.user.client.ui.Label;
@@ -24,6 +27,8 @@ public class UserListPanel extends Composite{
 	private final Label detailLabel = new Label("Role");
 	
 	private final ScrollPanel scrollPanel = new ScrollPanel();
+	
+	private final Button refresh = new Button("Refresh");
 	
 	private final UserServiceAsync userService = GWT
 			.create(UserService.class);
@@ -45,15 +50,15 @@ public class UserListPanel extends Composite{
 
 		scrollPanel.add(flexTable);
 		flexTablePrincipal.setWidget(0, 0, scrollPanel);
-		//flexTablePrincipal.setWidget(1, 1, recargarButton);
+		flexTablePrincipal.setWidget(1, 1, refresh);
 		
-		/*recargarButton.addClickHandler(new ClickHandler() {
+		
+		initWidget(flexTablePrincipal);
+		refresh.addClickHandler(new ClickHandler() {
 			public void onClick(ClickEvent event) {
 				llenarTabla();
 			}
-		});*/
-		initWidget(flexTablePrincipal);
-		
+		});
 	}
 	
 	public void masterReset(){
